@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lumanosimo', cursive,Arial, Helvetica, sans-serif;
+}
+
+/*Configurações do menu*/
+header{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+
+header p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 25px;
+    background-color: #D9D9D9;
+    color: black;
+}
+
+header > div.logo {
+    display: block;
+    background-image: url(../imagens/logo-infinity\ 100px.jpg);
+    height: 110px;
+    background-repeat: no-repeat;
+    margin: 10px;
+    margin-left: 40px;
+}
+nav {
+    display: inline-block;
+    background-color: orange;
+    margin: 10px;
+}
+
+form {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav > span#icone-menu {
+    font-size: 2em;
+    margin-left: 25px;
+    margin-right: 100px;
+
+    
+    
+}
+
+
