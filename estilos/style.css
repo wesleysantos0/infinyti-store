@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+/*  
+    fonte : Gilda display
+    cores dos site: 
+     color: #F2C744; amarelo
+     color: #F29B30; laranja 
+     color: #F2762E;laranja com tom mais escuro 
+
+*/
+
+:root {
+    --color-amarelo: #F2C744; 
+    --cor-laranja: #F29B30;
+    --cor-laranja-com-tom-mais-escuro: #F2762E;
+    --font-Gilda-display : 'Lumanosimo', cursive,Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,15 +24,17 @@
 
 /*Configurações do menu*/
 header{
-    height: 500px;
+    height: 270px;
     background-color: black;
     color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     background-color: #D9D9D9;
     color: black;
 }
@@ -31,23 +49,98 @@ header > div.logo {
 }
 nav {
     display: inline-block;
-    background-color: orange;
-    margin: 10px;
+    width: 100vw;
+    height: 30px;
+    
 }
 
-form {
+span {
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 nav > span#icone-menu {
-    font-size: 2em;
-    margin-left: 25px;
-    margin-right: 100px;
+   font-size: 2em;
+   margin-left: 20px;
+   margin-right: 20px;
+}
 
-    
+nav > span#icone-menu:hover {
+    color:var(--color-amarelo);
+}
+
+
+form {
+    display: inline;
+    width: 100px;
+    position: relative;
+    left: 8%;
+    top: -12px;
+}
+
+form > input#ipesq.pesquisa {
+    width: 190px;
+    height: 24px;
+    border-radius: 10px;
+}
+
+form >span#icone-pesquisa {
+    font-size: 1.8em;
+    position: relative;
+    top: 10px;
+    left: -6px;
+}
+
+form >span#icone-pesquisa:hover {
+    color: var(--color-amarelo);
+}
+
+span#icone-sacola {
+    font-size: 2em;
+    color: white;
+    position: relative;
+    left: 8%;
+}
+
+span#icone-sacola:hover {
+    color: var(--color-amarelo);
+}
+
+/*
+    Configurações do conteudo > main
+*/
+
+section.anuncio {
+    height: 100px;
+    text-align: center;
+    font-family: var(--font-Gilda-display);
+    font-size: .9em;
+    margin-top: 50px;
+}
+
+img#jordan {
+    width: 100vw;
+}
+
+section>div#baner00 a {
+    display: inline-block;
+    width: 80px;
+    background-color: #BD252D;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    font-size: 1em;
+    color: whitesmoke;
+    text-align: right;
+    text-decoration: none;
     
 }
+article {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+
 
 
