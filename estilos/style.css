@@ -19,7 +19,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Configurações do menu*/
@@ -87,7 +87,6 @@ form >span#icone-pesquisa {
     font-size: 1.8em;
     position: relative;
     top: 10px;
-    left: -6px;
 }
 
 form >span#icone-pesquisa:hover {
@@ -144,43 +143,57 @@ section >div#baner00>a#botao-baner00:hover {
     color:  #000000;
     background-color: #f80029;
 }
-article {
+article#descricao {
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
-    width: 50vw;
+    width: 85vw;
     padding: 20px;
+    margin-left: 10px;
     border-radius: 20px;
-   
 }
 
-article>h2 {
-    margin-bottom: 20px;
-    text-align: left;
+article#descricao>h2{
+    margin-bottom: 10px;
 }
 
-article>p {
+article#descricao>p {
     text-indent: 30px;
     text-align: center;
     text-align: justify;
     line-height: 1.4em;
 }
 
-section>aside>div.modelo {
-    display: inline-block;
-    background-image: url(../imagens/modelo-1.jpg);
-    background-size: cover;
-    height: 150px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    left: 65vw;
-    top: -380px;
-    border-radius: 10px;
-
+aside#exemplo{
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+
+.modelos {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+#modelo-1{
+    background-image: url(../imagens/modelo-1.jpg);    
+}
+
+#modelo-2{
+    background-image: url(../imagens/modelo-2.jpg);
+    
+}
+
+
+
+
+
 
 
 
