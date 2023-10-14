@@ -20,11 +20,11 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 /*Configurações do menu*/
 header{
-    height: 270px;
     background-color: black;
     color: white;
     border-bottom-left-radius: 30px;
@@ -45,65 +45,74 @@ header > div.logo {
     height: 110px;
     background-repeat: no-repeat;
     margin: 10px;
+    margin-bottom: 20px;
     margin-left: 40px;
 }
-nav {
-    display: inline-block;
-    width: 100vw;
-    height: 30px;
-    
-}
 
-span {
-    display: inline-block;
-}
+/*
+    Configurações menu-nav.
 
-nav > span#icone-menu {
-   font-size: 2em;
-   margin-left: 20px;
-   margin-right: 20px;
-}
+*/
+    menu {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        max-width: 500px;
+        min-width: 220px;
+    }
 
-nav > span#icone-menu:hover {
-    color:var(--color-amarelo);
-}
+    ul.menu-principal    {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        list-style-type: none;
+        margin: 10px;
+    }
+    li {
+        display: inline-block;
+        padding: 5px;
+    }
+    li>a {
+        display: block;
+        font-size: 2em;
+        color: white;
+        text-decoration: none; 
+    }
 
+    li>a:hover {
+        border-bottom: 3px solid #f2762ebe;
+        border-radius: 2px;
+    }
 
-form {
-    display: inline;
-    width: 100px;
-    position: relative;
-    left: 8%;
-    top: -12px;
-}
-
-form > input#ipesq.pesquisa {
-    width: 190px;
-    height: 24px;
-    border-radius: 10px;
-}
-
-form >span#icone-pesquisa {
-    font-size: 1.8em;
-    position: relative;
-    top: 10px;
-}
-
-form >span#icone-pesquisa:hover {
-    color: var(--color-amarelo);
-}
-
-span#icone-sacola {
-    font-size: 2em;
-    color: white;
-    position: relative;
-    left: 8%;
-}
-
-span#icone-sacola:hover {
-    color: var(--color-amarelo);
-}
-
+    li#ipesq{
+        position: relative;
+        top: -7px;
+        font-size: 2em;
+        border-radius: 10px;
+        
+    }
+    li#ipesq>form>input#ipesq[type="search"]{
+        height: 25px;
+        padding: 5px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: white;
+        background-image: url(../imagens/icone-pesquisa.png);
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+    li#ipesq>form>input#ipesq:focus {
+        background-color: lightblue;
+    }
+    /* Arrumar
+    input[type=text]:focus {
+        background-color: lightblue;
+      }
+    */
+        
 /*
     Configurações do conteudo > main
 */
@@ -118,7 +127,7 @@ section.anuncio {
 
 img#jordan {
     display: inline;
-    width: 100vw;
+    width: 100%;
     border-radius: 20px;
 }
 section#primeiro-conteudo {
@@ -180,20 +189,99 @@ aside#exemplo{
     background-size: contain;
     border-radius: 5px;
 }
+.modelos:hover {
+    transform: scale(1,1);
+}
 
 #modelo-1{
     background-image: url(../imagens/modelo-1.jpg);    
 }
+
 
 #modelo-2{
     background-image: url(../imagens/modelo-2.jpg);
     
 }
 
+/*
+    Efeito paralax
+*/
 
+div#Jordan-paralax{
+    padding-top: 40vw;
+    padding-bottom: 40vw;
+    background-image: url(../imagens/paralax-jordan.jpg);
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+/*anuncio002*/
 
+div#anuncio002 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
 
+div#anuncio002 #unico {
+    color: green;
+} 
+
+div#anuncio002 >h2 >.material-symbols-outlined {
+    font-size: 2em;
+    color: red;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 15px;
+
+}
+
+/* Marcas*/
+
+section.container-marcas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+}
+section.container-marcas .marca {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 5px solid rgb(56, 55, 55);
+}
+section.container-marcas #nike {
+    background-image: url(../imagens/nike-logo.jpg);
+    
+}
+section.container-marcas #adidas {
+    background-image: url(../imagens/adidas-logo.jpg);
+    
+}
+section.container-marcas #vans {
+    background-image: url(../imagens/vans-logo.jpg);
+    
+}
+section.container-marcas #mizuno {
+    background-image: url(../imagens/mizuno-logo.jpg);
+    
+}
+section.container-marcas #fila {
+    background-image: url(../imagens/fila-logo.jpg);
+    
+}
+section.container-marcas #puma {
+    background-image: url(../imagens/puma-logo.jpg);
+    
+}
 
 
 
